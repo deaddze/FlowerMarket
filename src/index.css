@@ -1,3 +1,28 @@
+@font-face {
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("SF UI Display"),
+       /* Если не получилось, загрузит woff2 */
+       url("./fonts/SFUIDisplay/SFUIDisplayRegular.ttf") format("ttf"),
+}
+@font-face {
+  font-family: "Trajan Pro 3";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Trajan Pro 3"),
+       /* Если не получилось, загрузит woff2 */
+       url("./fonts/TrajanPro3/TrajanPro3Regular.ttf") format("ttf"),
+}
+
 *{
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "SF UI Display", "Trajan Pro 3", sans-serif;
 }
